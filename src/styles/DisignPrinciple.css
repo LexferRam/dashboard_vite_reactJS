@@ -1,0 +1,73 @@
+.grid > div{
+    color: black;
+    background: #ecf0f1;
+    padding: 1em;
+}
+
+.grid > div:hover{
+    border: 1px solid #f1c40f;
+}
+
+/* GRID */
+
+/* .ele1{
+    grid-area: ele1;
+}
+
+.ele2{
+  grid-area: ele2;
+}
+
+.ele3 {
+    grid-area: ele3;
+}
+
+.ele4 {
+    grid-area: ele4;
+}
+
+.ele5 {
+    grid-area: ele5;
+}
+
+.ele6 {
+    grid-area: ele6;
+} */
+
+.grid {
+    display: grid;
+    gap: 1em;
+
+    /* autofit: se ajusta para ocupar el 100% del contenedor */
+    grid-template-columns: repeat(
+        auto-fit, 
+        minmax(150px, 1fr)
+    );
+
+    /* autofill: no se ajusta para ocupar el 100% del contenedor */
+    /* grid-template-columns: repeat(
+        auto-fill, 
+        minmax(150px, 1fr)
+    ); */
+}
+
+/* responsive con template area*/
+/* @media screen and (max-width: 320px) {
+    .grid{
+        grid-template-areas: "ele1 ele2"
+                            "ele3 ele3"
+                            "ele4 ele5"
+                            "ele6 ele6";
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+    .grid{
+        grid-template-areas: "ele1 ele1"
+                            "ele2 ele2"
+                            "ele3 ele3"
+                            "ele4 ele4"
+                            "ele5 ele5"
+                            "ele6 ele6";
+    }
+} */
